@@ -87,14 +87,14 @@ img {
     width: 14px;
     padding: 5px;
 }
-.focus_bar {
+.focus-bar {
     width: 250px;
     height: 350px;
     border-radius: 15px;
     background: #fff;
     border: 2px solid #3333;
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: -90px;
     visibility: hidden;
     opacity: 0;
@@ -105,49 +105,50 @@ img {
     align-content: center;
     user-select: none;
     z-index: 99;
-}
-.bell:focus + .message + .pp + .btn + .bell_bar,.bell_bar:focus {
+  }
+  .bell:focus + .message + .pp + .btn + .bell-bar,
+  .bell-bar:focus {
     visibility: visible;
     opacity: 1;
     top: 50px;
-}
-.message:focus + .pp + .btn + .bell_bar + .message_bar,
-.message_bar:focus {
+  }
+  .message:focus + .pp + .btn + .bell-bar + .message-bar,
+  .message-bar:focus {
     visibility: visible;
     opacity: 1;
     top: 50px;
-}
-.pp:focus + .btn + .bell_bar + .message_bar + .pp_bar,
-.pp_bar:focus {
+  }
+  .pp:focus + .btn + .bell-bar + .message-bar + .pp-bar,
+  .pp-bar:focus {
     visibility: visible;
     opacity: 1;
     top: 50px;
-}
-.btn:focus + .bell_bar + .message_bar + .pp_bar + .btn_bar,
-.btn_bar:focus {
+  }
+  .btn:focus + .bell-bar + .message-bar + .pp-bar + .btn-bar,
+  .btn-bar:focus {
     visibility: visible;
     opacity: 1;
     top: 50px;
-}
-.pp_bar a {
+  }
+  .pp-bar a {
     text-decoration: none;
     padding: 5px 15px;
     border: 2px solid #161b22;
     color: #161b22;
-    border-radius: 5px; 
-}
-.pp_bar {
+    border-radius: 5px;
+  }
+  .pp-bar {
     flex-direction: column;
-}
-.pp_bar img {
+  }
+  .pp-bar img {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-}
-.pp_bar a:hover {
+  }
+  .pp-bar a:hover {
     background: #161b22;
     color: white;
-}
+  }
 
 /*MINI BAR*/
 #button_search {
@@ -210,7 +211,7 @@ img {
 
 #content {
     margin-top: 65px;
-    columns: 7;
+    columns: 7 250px;
     column-gap: 0.5em;
 }
 .card-image {
@@ -380,6 +381,10 @@ img {
     }
     #content {
         margin: -120px 0px 40px 0px;
+        margin-top: 65px;
+        columns: 7 500px;
+        column-gap: 0.5em;
+        }
     }
 }   
 
