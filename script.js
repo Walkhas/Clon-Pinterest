@@ -1,0 +1,10 @@
+document.getElementById("button_search").onclick=function(){
+  document.getElementById("button_search").style.pointerEvents="none";
+  document.getElementById("button_search").style.opacity="0.5";
+  document.querySelector(".responsive_search_bar").style.top="0px";
+}
+document.querySelector(".close").onclick=function(){
+  document.getElementById("button_search").style.pointerEvents="auto";
+  document.getElementById("button_search").style.opacity="1";
+  document.querySelector(".responsive_search_bar").style.top="-300px";
+}
