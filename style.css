@@ -14,6 +14,7 @@ img {
 #navbar-pinterest {
     width: 100%;
     display: flex;
+    left: -10px;
     top: -5px;
     align-items: center;
     padding: 10px;
@@ -106,6 +107,7 @@ img {
     user-select: none;
     z-index: 99;
   }
+  /*
   .bell:focus + .message + .pp + .btn + .bell-bar,
   .bell-bar:focus {
     visibility: visible;
@@ -129,7 +131,12 @@ img {
     visibility: visible;
     opacity: 1;
     top: 50px;
-  }
+  }*/
+  .focus-bar.active {
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+}
   .pp-bar a {
     text-decoration: none;
     padding: 5px 15px;
@@ -385,8 +392,7 @@ img {
         columns: 7 500px;
         column-gap: 0.5em;
         }
-    }
-}   
+}
 
 
 
